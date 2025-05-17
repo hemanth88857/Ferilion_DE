@@ -78,10 +78,3 @@ prime_numbers = list(filter(
 
 print(prime_numbers)
 
-
-nu = 10
-
-p = list(filter(lambda x:x>1 and len([i for i in range(2,x) if x % i == 0])==0
-                ,range(2,nu+1)))
-
-print(p)
