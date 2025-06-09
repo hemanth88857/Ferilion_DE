@@ -54,9 +54,7 @@ class Amazon_Products:
         # return  "item not Available"
 
 class Price(Amazon_Products):
-    price_Value = 0
-    max_discount = 50
-    total_val = 0
+
 
     @classmethod
     def price_cal(cls, product_name, quantity):
@@ -74,7 +72,9 @@ class Price(Amazon_Products):
             return Price.price_Value - discount_price
         return f"Please add to price_cal frist"
 
-
+    price_Value = 0
+    max_discount = 50
+    total_val = 0
 
 
 

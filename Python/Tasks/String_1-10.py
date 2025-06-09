@@ -181,23 +181,165 @@ from operator import index
 
 ''' 14 Sort unique words alphanumerically '''
 
-sentence = "If you have a table with duplicates"
+# # input_string = "banana apple cherry apple banana mango"
+# input_string = "zebra,apple,monkey,apple,zebra,dog"
+#
+#
+# strings = []
+#
+# for each in input_string.split(','):
+#     if each not in strings:
+#         strings.append(each)
+#
+# print(sorted(strings))
+#
+# strd = sorted(list(filter(lambda x:x ,input_string.split(','))))
+# print(strd)
+#
+#
+# set1 = set(input_string.split(','))
+# print(sorted(list(set1)))
+
+
+'''   16 Insert string in middle of speical chars '''
+
+"""""
+base = "[[]]"
+word = "World"
+
+base = "###*###"
+word = "Test"
+
+midlevel = len(base)//2
+print(midlevel)
+
+half1 = base[:midlevel]
+half2 = base[midlevel:]
+word =  half1 + word + half2
+
+print(half1,half2)
+print(word)
+
+
+def insert_in_middle(base,word):
+
+    mid_value = 0
+    if len(base) % 2  == 0:
+        mid_value = len(base) // 2
+    else:
+        mid_value = (len(base)//2 ) + 1
+
+    return base[:mid_value] + word + base[mid_value:]
+
+print(insert_in_middle(base = "[[]]" , word = "World"))
+print(insert_in_middle(base = "###*###" , word = "World"))
+
+
+"""""
+
+''' 17 	4 Copies of last 2 chars '''
+
+# def string_copies(text,copies,chars):
+#
+#     text_char = text[-(chars):]
+#     return copies*text_char
+#
+# print(string_copies("n",1,2))
+
+
+''' 18 Length of first 3 chars '''
+
+# def length_of_chars(text,char):
+#
+#     return text[:char]
+# print(length_of_chars("python",3))
+
+''' 20  reverses a string if it's length is a multiple of 4'''
+
+
+# def reverse_string_multiple(text,multiple):
+#
+#     if len(text) % multiple == 0 :
+#         return  text[::-1]
+#     return text
+#
+# print(reverse_string_multiple("thatshow99",5))
+
+
+''' Convert a given string to all uppercase'''
+
+
+# def case_manipulation(text):
+#
+#     return text.upper()
+#
+# print(case_manipulation("heman"))
+
+
+
+''' program to check whether a string starts with specified characters'''
+
+
+# def check_spec_char(text,spec_char):
+#
+#     if text.startswith(spec_char):
+#         return True
+#     return False
+#
+#
+# print(check_spec_char("python is a interpreter language","python"))
+
+
+'''program to sort a string lexicographically'''
+
+name = 'banana apple Orange grape'
+new_str = ""
+
+print(sorted(name.split(' ')))
+# for each in sorted(name):
+#     new_str += each
+#
+# print(new_str)
+
+def lexicographically_sent(sentence):
+    new_str = ""
+    if " " in sentence:
+        for each in sorted(sentence.split(' ')):
+            new_str += each + " "
+        new_str = new_str.removesuffix(" ")
+    else:
+        for each in sorted(sentence):
+            new_str += each
+
+
+    return new_str
+
+print(lexicographically_sent("banana apple Orange grape"))
+print(lexicographically_sent("banana apple orange grape"))
+
+
+
+def lexicographically(word):
+    word = word.replace(" ","")
+    new_str = ""
+    for each in sorted(word):
+        new_str += each
+
+    return new_str
+print(lexicographically("pPthOonN"))
+print(lexicographically("open ai"))
+
+
+
 
 
 '''
 
 
-14	String	Medium	Sort unique words alphanumerically
 15	String	Difficult	Create html from string
-16	String	Difficult	Insert string in middle of speical chars
-17	String	Medium	4 Copies of last 2 chars
-18	String	Medium	Length of first 3 chars
 19	String	Basic	Last part of string
-20	String	Medium	 reverses a string if it's length is a multiple of 4
-21	String	Basic	Convert a given string to all uppercase
 22	String	Medium	program to sort a string lexicographically
 23	String	Basic	program to remove a newline in Python
-24	String	Basic	program to check whether a string starts with specified characters
 25	String	Medium	program to create a Caesar encryption
 26	String	Medium	display formatted text (width=50) as output
 27	String	Medium	remove existing indentation from all of the lines in a given text

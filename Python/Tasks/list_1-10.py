@@ -7,31 +7,33 @@ from tkinter.font import names
 
 '''    1.Sum of elements     '''
 
-elements = [1,5,6,7,5,4,6,9,4,3,2]
-def sum_of_elements_case_1(Num):
-    # num = sum(Num)
-    # print(num)
-    pass
-sum_of_elements_case_1(elements)
-
-def sum_of_elements_case_2(num):
-    # val = 0
-    # for each in num:
-    #     val += each
-    # print(val)
-    pass
-sum_of_elements_case_2(elements)
+# elements = [1,5,6,7,5,4,6,9,4,3,2]
+# def sum_of_elements_case_1(Num):
+#     # num = sum(Num)
+#     # print(num)
+#     pass
+# sum_of_elements_case_1(elements)
+#
+# def sum_of_elements_case_2(num):
+#     # val = 0
+#     # for each in num:
+#     #     val += each
+#     # print(val)
+#     pass
+# sum_of_elements_case_2(elements)
 
 # ----------------------------------------------------------------------------------------
 ''' 2 Mulitply of elements    '''
 # Numbers = [1,5,6,7,5,4,6,9,4,3,2]
-def multi_of_elements_case_1(num):
-    # val = 1
-    # for each in num:
-    #     val *= each
-    # print(val)
-    pass
-multi_of_elements_case_1(elements)
+# elements = [1,5,6,7,5,4,6,9,4,3,2]
+
+# def multi_of_elements_case_1(num):
+#     # val = 1
+#     # for each in num:
+#     #     val *= each
+#     # print(val)
+#     pass
+# multi_of_elements_case_1(elements)
 # ----------------------------------------------------------------------------------------
 
 
@@ -194,70 +196,70 @@ input_words = [
 # ----------------------------------------------------------------------------------------
 
 ''' 11	Find common element from 2 lists  '''
-
-list1 = [1, 2, 3, 4, 5]
-list2 = [4, 5, 6, 7, 8]
-
-dict1 = {'a': 1, 'b': 2, 'c': 3}
-dict2 = {'b': 4, 'c': 5, 'd': 6}
-
-str1 = "python"
-str2 = "notebook"
-
-tuple1 = [(1, 2), (3, 4), (5, 6)]
-tuple2 = [(3, 4), (7, 8), (1, 2)]
-
-
-
-def Comm_Elements_Case_1() :
-    fruits_list1 = ["Apple", "Banana", "Mango", "Cherry", "Grapes"]
-    fruits_list2 = ["Pineapple", "Banana", "Kiwi", "Apple", "Papaya"]
-    val = []
-
-    for each in fruits_list1:
-        if each in fruits_list2:
-            val.append(each)
-
-    if len(val) >= 1:
-        print(val)
-    else:
-        print("no matching")
-# Comm_Elements_Case_1()
-
-def Comm_Elements_Case_2(lst1,lst2) :
-
-    val = False
-    for each in lst1:
-        if each in lst2:
-            val = True
-    print(val)
-# Comm_Elements_Case_2(list1,list2)
-
-def Comm_Elements_Case_3(lst1,lst2) :
-
-    val = 0
-    for each in lst1:
-        if each in lst2:
-            val += 1
-    print(f"Comm_Elements_Case_3 ----{val}")
-# Comm_Elements_Case_3(list1,list2)
-
-def Comm_Elements_Case_4(dic1,dic2) :
-
-    val = []
-    for value in dic1:
-        if value in dic2:
-            val.append(value)
-    print(f"Comm_Elements_Case_4 ----{val}")
-# Comm_Elements_Case_4(dict1,dict2)
-
-def Comm_Elements_Case_tuple(tip1,tip2) :
-
-    val = []
-    for value in tip1:
-        if value in tip2:
-            val.append(value)
-    print(f"Comm_Elements_Case_4 ----{val}")
+#
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [4, 5, 6, 7, 8]
+#
+# dict1 = {'a': 1, 'b': 2, 'c': 3}
+# dict2 = {'b': 4, 'c': 5, 'd': 6}
+#
+# str1 = "python"
+# str2 = "notebook"
+#
+# tuple1 = [(1, 2), (3, 4), (5, 6)]
+# tuple2 = [(3, 4), (7, 8), (1, 2)]
+#
+#
+#
+# def Comm_Elements_Case_1() :
+#     fruits_list1 = ["Apple", "Banana", "Mango", "Cherry", "Grapes"]
+#     fruits_list2 = ["Pineapple", "Banana", "Kiwi", "Apple", "Papaya"]
+#     val = []
+#
+#     for each in fruits_list1:
+#         if each in fruits_list2:
+#             val.append(each)
+#
+#     if len(val) >= 1:
+#         print(val)
+#     else:
+#         print("no matching")
+# # Comm_Elements_Case_1()
+#
+# def Comm_Elements_Case_2(lst1,lst2) :
+#
+#     val = False
+#     for each in lst1:
+#         if each in lst2:
+#             val = True
+#     print(val)
+# # Comm_Elements_Case_2(list1,list2)
+#
+# def Comm_Elements_Case_3(lst1,lst2) :
+#
+#     val = 0
+#     for each in lst1:
+#         if each in lst2:
+#             val += 1
+#     print(f"Comm_Elements_Case_3 ----{val}")
+# # Comm_Elements_Case_3(list1,list2)
+#
+# def Comm_Elements_Case_4(dic1,dic2) :
+#
+#     val = []
+#     for value in dic1:
+#         if value in dic2:
+#             val.append(value)
+#     print(f"Comm_Elements_Case_4 ----{val}")
+# # Comm_Elements_Case_4(dict1,dict2)
+#
+# def Comm_Elements_Case_tuple(tip1,tip2) :
+#
+#     val = []
+#     for value in tip1:
+#         if value in tip2:
+#             val.append(value)
+#     print(f"Comm_Elements_Case_4 ----{val}")
 # Comm_Elements_Case_tuple(tuple1,tuple2)
 
 
@@ -290,18 +292,18 @@ fruits_list1 = ["Apple", "Banana", "Mango", "Cherry", "Grapes"]
 
 ''' 15  Shuffle list and print '''
 
-shuf_list = [1, 2, 3, 4, 5]
+# shuf_list = [1, 2, 3, 4, 5]
+# #
+# # for i in range(len(shuf_list)):
+# #     for j in range(len(shuf_list)-1,-1,-1):
+# #         shuf_list[i] ,shuf_list[j] =   shuf_list[j] ,shuf_list[i]
+# #
+# # print(shuf_list)
 #
-# for i in range(len(shuf_list)):
-#     for j in range(len(shuf_list)-1,-1,-1):
-#         shuf_list[i] ,shuf_list[j] =   shuf_list[j] ,shuf_list[i]
+# # case2
 #
+# random.shuffle(shuf_list)
 # print(shuf_list)
-
-# case2
-
-random.shuffle(shuf_list)
-print(shuf_list)
 
 
 
@@ -320,9 +322,88 @@ print(shuf_list)
 # print(f"first element is {first_element} and second element is {last_element}")
 
 
+''' 17 First,Last elements whose square value is between 1 and 30,except first 5'''
+
+#
+#
+# def first_last_elements(input_list:list[int],expect_val):
+#
+#     list = input_list[expect_val:]
+#     new_list  = []
+#     for i in list:
+#         if i * i in range(1,30):
+#             new_list.append(i)
+#
+#     if len(new_list) >= 1 :
+#         return new_list[0],new_list[-1]
+#     return None
+#
+#
+# print(first_last_elements([1,3,4,5,5,9,6,7,8,8,8,9],5))
+
+
+''' 20 Difference betweeen 2 lists'''
+
+
+
+# def list_difference_in_twolists(list1,list2)->list:
+#
+#     new_list = []
+#     for each in list2:
+#         if each not in list1:
+#             new_list.append(each)
+#
+#     for each in list1:
+#         if each not in list2:
+#             new_list.append(each)
+#
+#     # return new_list
+#
+#
+#     lst = [item for item in list1 if item not in list2] + \
+#           [item for item in list2 if item not in list1]
+#     return lst
+#
+#
+# def list_difference(list1,list2):
+#
+#     new_list = []
+#
+#     for each in list1:
+#         if each not in list2:
+#             new_list.append(each)
+#
+#     return new_list
+#
+#
+# print(list_difference_in_twolists([1, 2, 3, 4, 5],[2,4,6]))
+# print(list_difference([1, 2, 3, 4, 5],[2,4,6]))
+#
+#
+# list1 = ['a', 'b', 'c', 'd']
+# list2 = ['b', 'e', 'f']
+# print(list_difference_in_twolists(list1,list2))
+# print(list_difference(list1,list2))
+#
+#
+# list1 = [10, 20, 30]
+# list2 = [10, 20, 30]
+#
+# print(list_difference_in_twolists(list1,list2))
+# print(list_difference(list1,list2))
+
+
+
+''' 20 To access index of list'''
+
+input_list = ['apple', 'banana', 'cherry']
+
+if len(input_list) >= 1:
+    for each in range(len(input_list)):
+        print(f"index {each} : {input_list[each]}")
+
+
 '''
-16	List	Medium	First,Last elements whose square value is between 1 and 30
-17	List	Difficult	First,Last elements whose square value is between 1 and 30,except first 5
 18	List	Medium	All permutations of list elements
 19	List	Basic	Difference betweeen 2 lists
 20	List	Basic	To access index of list

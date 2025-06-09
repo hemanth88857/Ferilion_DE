@@ -1,4 +1,6 @@
-from Classes.ClassObjects.Entertainment_Class import Movie
+from Python.Classes.ClassObjects.Entertainment_Class import Movie
+
+from Python.Classes.ClassObjects.Entertainment_Class import Event_Booking
 
 # eventpayment = Event_Booking.payment_status("Done")
 #
@@ -47,3 +49,28 @@ print(Movie.movie_ott("JIO")) # class method
 print(Movie.movie_rating("5")) # static method
 print(movie1.booking_message) # property method
 
+
+
+print(Event_Booking.create_booking_id(67))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+num = [1,2,3,4,4]
+
+ar = map()

@@ -144,11 +144,13 @@ from operator import index
 
 '''
 
+# 9 = 0 (-1,-1)
+# 9= 1 = (0,0)
+# 9= 2 (0,3)
+# 4= 3 (1,11)
 
-
-
-# num = 4
-# l1 = [6,1,2,4,5,6,4,7,2,8,5,4]
+# num = 9
+# l1 = [9,4,1,9,2,4,5,6,4,7,2,8,5,4,5]
 #
 #
 # if len(l1) == 0 or num not in l1 :
@@ -164,7 +166,6 @@ from operator import index
 #             print("[",l11,l12, "]")
 #     else:
 #         first_index = l1.index(num)
-#         # Finding the last occurrence without using [::-1]
 #         last_index = len(l1) - 1
 #         while l1[last_index] != num:
 #             last_index -= 1

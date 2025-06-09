@@ -1,5 +1,26 @@
-from Classes.ClassObjects.Banking_class import AmountWithdraw
-from ConstantData.Banking_Data import customersdetails
+from Python.Classes.ClassObjects.Banking_class import AmountWithdraw
+from Python.ConstantData.Banking_Data import customersdetails
+from Python.log_create.New_log_create import logger
+
+
+
+
+
+print(logger)
+try :
+    a = 10/9
+except Exception as exe:
+    logger.error("An exception %s", exe)
+    print(exe)
+else:
+    logger.info(f"alog as {a}")
+
+
+
+
+
+
+
 
 # Checking if an account number is valid
 print(AmountWithdraw.is_valid_account_number("1234567890"))  # True

@@ -1,0 +1,2 @@
+/n Classes serve as blueprints for creating objects.  file/n addded extra things to file/n They encapsulate data (attributes) and behavior (methods) related to a particular concept or entity. 
+            - Abstraction in classes involves defining methods that provide a /n They encapsulate data (attributes) and behavior (methods) 

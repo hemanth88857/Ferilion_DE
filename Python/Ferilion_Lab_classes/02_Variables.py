@@ -66,3 +66,31 @@ DM
 # print(0.1 + 0.2)
 
 
+
+
+
+
+
+
+
+
+
+class Animal:
+    def __init__(self,password):
+        self.password = password
+
+    def get_details(self):
+        return self.password
+
+    @property
+    def password(self):
+        return self._password
+
+
+obj1 = Animal("12345")
+print(obj1.password)
+print(obj1.get_details())
+
+
+obj1.password = "3455"
+print(obj1.password)

@@ -1,5 +1,7 @@
-from Classes.Inhertaince.Amazon import Shopping,Amazon_Products,Price
-# from Classes.Inhertaince.Amazon import Amazon_Products,Price
+from Python.Classes.Inhertaince.Amazon import Shopping,Amazon_Products,Price
+from Python.Classes.Inhertaince.Amazon import Amazon_Products
+
+# from Python.Classes.Inhertaince.Amazon import Amazon_Products,Price
 
 
 

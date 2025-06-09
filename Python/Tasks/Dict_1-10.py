@@ -373,31 +373,156 @@ dict2 = {'b': 5, 'c': 15, 'd': 25}
 # print(unique_values(data))
 
 """17 Find the highest 3 values in a dictionary"""
+# data = {
+#     "a": 100,
+#     "b": 250,
+#     "c": 175,
+#     "d": 300,
+#     "e": 50,
+#     "f":275
+# }
+#
+# new_dict_values= sorted(data.values(),reverse=True)[:3]
+#
+# print(new_dict_values)
+# new_dict_keys= sorted(data.items(),key= lambda  x:x[1], reverse=True)[:3]
+# print(new_dict_keys)
+
+''' Create and display all combinations of letters, selecting each letter from a different key in a dictionary '''
+
+
+letter_dict = {
+    '1': ['a', 'b','c'],
+    '2': ['d','e','f'],
+    '3' :['g','h','i'],
+    '4':['j','k','l']
+}
+# ['ac', 'ad', 'bc', 'bd']
+
+# values_list = list(letter_dict.values())
+# # print(values_list)
+#
+#
+# new_list = values_list[0]
+#
+# # firstvalue = values_list[0]
+# for each in values_list[1:]:
+#     temp = []
+#     for i in new_list:
+#         for j in each:
+#             temp.append(i+j)
+#     new_list = temp
+# print(new_list)
+
+
+# new_value = list(letter_dict.values())
+# # print(new_value)
+#
+# new_list = new_value[0]
+#
+# for each in new_value[1:]:
+#     # print(i)
+#     temp = []
+#     for i in new_list:
+#         for j in each:
+#             temp.append(i+j)
+#     new_list = temp
+#
+# print(new_list)
+
+
+'''Find the highest 3 values in a dictionary.'''
+
+# data = {'a': 10, 'b': 30, 'c': 20, 'd': 50, 'e': 40} #[50, 40, 30]
+# new_data = []
+# for each in sorted(list(data.values()),reverse=True):
+#     if len(new_data) == 3:
+#         break
+#     else:
+#         new_data.append(each)
+#
+# print(new_data)
+#
+#
+# new_value = sorted(data.items(),key=lambda x:x[1],reverse=True)[:3]
+# print(new_value)
+#
+# new_value1 = sorted(list(data.values()),reverse=True)[:3]
+# print(new_value1)
+
+''' Combine values in python list of dictionaries'''
+# dict_list = [
+#     {'a': 10, 'b': 20},
+#     {'a': 5, 'b': 15, 'c': 10},
+#     {'b': 5, 'c': 5}
+# ]
+#
+#
+# new_dict = {}
+#
+# for each in dict_list:
+#     for j in each:
+#         if j in new_dict:
+#             new_dict[j] = new_dict[j] + each[j]
+#         else:
+#             new_dict.setdefault(j,each[j])
+#
+# print(new_dict)
+
+
+'''Create a dictionary from a string'''
+
+# text = "hello mani"
+# new_dict = {}
+# for each in text:
+#     if each in new_dict:
+#         new_dict[each] += 1
+#     elif each == " ":
+#         pass
+#     else:
+#         new_dict.setdefault(each,1)
+#
+# print(new_dict)
+
+''' 21 Count the values associated with key in a dictionary'''
+# data = [
+#     {'name': 'Alice', 'score': 10},
+#     {'name': 'Bob', 'score': 15},
+#     {'name': 'Charlie', 'score': 25}
+# ]
+# key = 'score'
+
+# data = [
+#     {'product': 'A', 'qty': 5},
+#     {'product': 'B'},
+#     {'product': 'C', 'qty': 3}
+# ]
+# key = 'qty'
+# val = 0
+#
+#
+# for each in data:
+#     for j in each:
+#         if j == key:
+#             val += each[j]
+# print(val)
+
+''' Sort a list alphabetically in a dictionary'''
+
 data = {
-    "a": 100,
-    "b": 250,
-    "c": 175,
-    "d": 300,
-    "e": 50,
-    "f":275
+    'fruits': ['banana', 'apple', 'mango'],
+    'vegetables': ['carrot', 'beetroot', 'asparagus']
 }
 
-new_dict_values= sorted(data.values(),reverse=True)[:3]
 
-print(new_dict_values)
-new_dict_keys= sorted(data.items(),key= lambda  x:x[1], reverse=True)[:3]
-print(new_dict_keys)
+
+
+
+
 
 '''
 
-
-
-16	Dictionary	Medium	Create and display all combinations of letters, selecting each letter from a different key in a dictionary
-17	Dictionary	Difficult	Find the highest 3 values in a dictionary.
-18	Dictionary	Medium	Combine values in python list of dictionaries.
-19	Dictionary	Basic	Create a dictionary from a string.
 20	Dictionary	Basic	Print a dictionary in table format.
-21	Dictionary	Medium	Count the values associated with key in a dictionary
 22	Dictionary	Medium	Convert a list into a nested dictionary of keys.
 23	Dictionary	Medium	Sort a list alphabetically in a dictionary.
 24	Dictionary	Medium	Remove spaces from dictionary keys.

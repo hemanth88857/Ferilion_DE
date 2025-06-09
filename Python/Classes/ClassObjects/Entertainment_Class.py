@@ -10,7 +10,7 @@ variable: Attributes   : bookingID, userID, eventname, eventdate, seatCategory, 
 
 class Event_Booking: # class
 
-    total_bookings = [] # class variable
+    total_bookings = ["DRagaon"] # class variable
     
     def __init__(self,eventname, eventdate, ticketquantity, totalcost, paymentmethod, bookingdate,bookingid,paymentstatus): # instance variables
         self.eventname = eventname
@@ -32,7 +32,8 @@ class Event_Booking: # class
 
     @staticmethod # static method
     def create_booking_id(booking_id):
-        return booking_id
+        # t1 = Event_Booking.total_bookings
+        return booking_id #,t1
 
     @property # property method
     def payment_message(self):

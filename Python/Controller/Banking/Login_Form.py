@@ -1,6 +1,6 @@
 
-from Classes.ClassObjects.Banking_class import  LoginForm
-from  ConstantData.Banking_Data import bankcustomers
+from Python.Classes.ClassObjects.Banking_class import  LoginForm
+from  Python.ConstantData.Banking_Data import bankcustomers
 
 customer1 = LoginForm("hemanth","Cherry2sush",biometeric= False,name="cust001")
 customer1.isbiometricEnabled()

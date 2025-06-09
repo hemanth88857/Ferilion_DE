@@ -82,6 +82,7 @@
 #
 #     for each in range(1,11):
 #         print(f"{num} X {each} = {num*each}")
+
 #
 # table(13)
 
@@ -208,6 +209,25 @@
 #     return f"number of upper case letters {count_upper} and lower case letters {count_lower}"
 #
 # print(str_upper_lower("GYIyhhgjgy&&&&hhjfKKLk"))
+
+
+''' 15 takes a list and returns a new list with unique elements of the first list.'''
+
+
+# def unique_list(input_list:list) -> list:
+#
+#     new_list  = []
+#
+#     for each in input_list:
+#         if each not in new_list:
+#             new_list.append(each)
+#
+#     return new_list
+#
+#     # new_list = set(input_list)
+#     # return list(new_list)
+#
+# print(unique_list([1,2,3,3,4,4,5,6,6,2,4,5,6]))
 
 
 

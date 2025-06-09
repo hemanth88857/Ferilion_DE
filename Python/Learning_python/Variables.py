@@ -1,5 +1,5 @@
 
-from Learning_python.classes import student_details
+# from Learning_python.classes import student_details
 
 # ------------ Variables_____________
 
@@ -139,7 +139,41 @@ from Learning_python.classes import student_details
 # #     print("l3")
 
 
+# def inner():
+#     # x = "Local"  # Local Scope
+#     print(x)
+#     x = 20
+#
 
-collageDe = student_details("","")
-collageDe.name = "ksrd"
-print(collageDe.name)
+
+try :
+    v1 = 3/0
+except ArithmeticError as e :
+    # log("")
+    print(f"hi {e}")
+
+
+
+def add(*args):
+    var = args
+    print(sum(var))
+    return var
+add(1,3,4,4,5,5,5,6,6,6)
+print(type(add(2,4,5,6)))
+
+
+dict1 = {"a":1, "b": {"c": 2, "d":{"e" : 3}}} #* Input
+# {"a" : 1, "b.c" : 2, "b.d.e" : 3} #! output
+
+new_dict = {}
+def rever(dic=dict):
+   # count = len(dic)
+   # if count > 0 :
+        for each in dic:
+           # count -= 1
+            print(dic[each])
+            rever(dic[each])
+
+
+rever(dict1)
+
